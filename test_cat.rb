@@ -7,4 +7,9 @@ class TestCat < Minitest::Test
 		assert_equal('bentley', animal.name)
 	end
 
+	def test_return_cat_sound
+		animal = Cat.new('samantha')
+		assert_equal('meow', animal.sound)
+	end	
+
 end
