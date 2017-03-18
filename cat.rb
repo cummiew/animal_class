@@ -8,7 +8,5 @@ class Cat
 
 	def info
 		@name +" say's " + @sound + ' when he ' + @action
-
-
 	end
 end
