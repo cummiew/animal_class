@@ -1,6 +1,5 @@
 require 'minitest/autorun'
-require_relative 'cat.rb'
-require_relative 'dog.rb'
+require_relative 'cat.rb' 
 
 class TestCat < Minitest::Test
 	def test_return_cat_name
@@ -22,13 +21,6 @@ class TestCat < Minitest::Test
 		animal = Cat.new('bentley')
 		assert_equal("bentley say's meow when he licks", animal.info)
 	end
-
-	def test_return_dog_name
-		animal = Dog.new('duke')
-		assert_equal('duke', animal.name)
-	end
-
-	# def test_return_dog_sound
-	# 	animal = 
-
 end
+
+		
