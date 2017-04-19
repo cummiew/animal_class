@@ -4,7 +4,7 @@ require_relative 'cat.rb'
 class TestCat < Minitest::Test
 	def test_return_cat_name
 		animal = Cat.new('bentley')	
-		assert_equal('bentley', animal.name)
+		assert_equal('Bentley', animal.name)
 	end
 
 	def test_return_cat_sound
@@ -19,7 +19,7 @@ class TestCat < Minitest::Test
 
 	def test_return_cat_info
 		animal = Cat.new('bentley')
-		assert_equal("bentley say's meow when he licks", animal.info)
+		assert_equal("Bentley say's meow when he licks!", animal.info)
 	end
 end
 

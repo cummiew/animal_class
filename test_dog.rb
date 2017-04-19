@@ -2,9 +2,10 @@ require 'minitest/autorun'
 require_relative 'dog.rb' 
 
 class TestDog < Minitest::Test
+
 	def test_return_dog_name
 		animal = Dog.new("duke")
-		assert_equal("duke", animal.name)
+		assert_equal("Duke", animal.name)
 	end
 
 	def test_return_dog_sound
@@ -19,7 +20,7 @@ class TestDog < Minitest::Test
 
 	def info
 		animal = Dog.new("duke")
-		assert_equal("duke has a bark louder than his bite!", animal.info)
+		assert_equal("Duke has a bark louder than his bite!", animal.info)
 	end
 end
 

@@ -1,25 +1,25 @@
 require 'minitest/autorun'
-require_relative 'rooster.rb' 
+require_relative 'fox.rb' 
 
-class TestRooster < Minitest::Test
-	def test_1_return_fox_name
+	class TestFox < Minitest::Test
+
+	def test_return_fox_name
 		animal = Fox.new('harry')	
-		assert_equal('harry', animal.name)
+		assert_equal('Harry', animal.name)
 	end
 
 	def test_return_fox_sound
 		animal = Fox.new('harry')
-		assert_equal('crows', animal.sound)
+		assert_equal('barks', animal.sound)
 	end	
 
 	def test_return_fox_action
 		animal = Fox.new('harry')
-		assert_equal('flaps', animal.action)
+		assert_equal('stalks', animal.action)
 	end
 
-	def test_return_fox_info
+	def info
 		animal = Fox.new('harry')
-		assert_equal('The red fox makes quick series of barks and  
-		stalks in a low to the ground posture.') 
-	
+		assert_equal("Harry the fox makes quick series of barks and stalks in a low to the ground posture.", animal.info)
+	end 
 end
